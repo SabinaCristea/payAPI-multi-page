@@ -1,7 +1,7 @@
 import React from "react";
 
 const page = () => {
-  return <div>khig</div>;
+  return <div>about</div>;
 };
 
 export default page;

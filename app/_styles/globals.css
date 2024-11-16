@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #edf3f8;
+  --foreground: #1b262f;
+
+  --primary-pink: #ba4270;
+  --primary-white: #fbfcfe;
+
+  --secondary-blue-1: #36536b;
+  --secondary-blue-2: #1b262f;
+  --secondary-blue-3: #6c8294;
+  --secondary-pink: #da6d97;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
