@@ -1,5 +1,7 @@
 import { DM_Serif_Display } from "next/font/google";
 import "./_styles/globals.css";
+import Navigation from "./_components/Navigation";
+import Footer from "./_components/Footer";
 
 // const serifDisplay = localFont({
 //   src: "./fonts/DMSerifDisplay-Regular.ttf",
@@ -29,8 +31,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${serifDisplay.className} antialiased`}>
-        {children}
+      <body
+        className={`${serifDisplay.className} antialiased flex flex-col min-h-screen`}
+      >
+        <Navigation />
+
+        <main className="flex-1">{children}</main>
+        <div className="bg-[var(--foreground)]">
+          <Footer />
+        </div>
       </body>
     </html>
   );
