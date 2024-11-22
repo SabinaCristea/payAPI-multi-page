@@ -36,8 +36,8 @@ export default function RootLayout({
       >
         <Navigation />
 
-        <main className="flex-1">{children}</main>
-        <div className="bg-[var(--foreground)]">
+        <main className="flex-1 mx-[16.5rem] ">{children}</main>
+        <div className="bg-[var(--foreground)] overflow-hidden relative">
           <Footer />
         </div>
       </body>
