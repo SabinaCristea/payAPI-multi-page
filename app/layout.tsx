@@ -32,11 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${serifDisplay.className} antialiased flex flex-col min-h-screen`}
+        className={`${serifDisplay.className} antialiased flex flex-col min-h-screen overflow-hidden`}
       >
         <Navigation />
 
-        <main className="flex-1 mx-[16.5rem] ">{children}</main>
+        <main className="flex-1 mx-[16.5rem]  ">{children}</main>
         <div className="bg-[var(--foreground)] overflow-hidden relative">
           <Footer />
         </div>

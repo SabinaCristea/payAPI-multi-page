@@ -1,32 +1,43 @@
-// import Image from "next/image";
+import PhoneMockupSvg from "./../public/assets/home/desktop/illustration-phone-mockup.svg";
 
-import Image from "next/image";
+import CirclePatternSvg from "./../public/assets/shared/desktop/bg-pattern-circle.svg";
+
+import { Public_Sans } from "next/font/google";
+
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal"],
+});
 
 export default function Home() {
   return (
     <div className="relative">
-      <svg
-        width="780"
-        height="780"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        className="absolute top-[-21.6rem] right-[-29.5rem] z-[-1]"
-      >
-        <defs>
-          <circle id="a" cx="390" cy="390" r="390" />
-          <circle id="b" cx="390" cy="390" r="390" />
-        </defs>
-        <g fill="#36536B" fillRule="evenodd" opacity=".15">
-          <use xlinkHref="#a" />
-          <use xlinkHref="#b" />
-        </g>
-      </svg>
-      <Image
-        src="/assets/home/desktop/illustration-phone-mockup.svg"
-        width="419"
-        height="660"
-        alt="Phone mockup"
+      <CirclePatternSvg className="absolute top-[-21.6rem] right-[-29.5rem] z-[-1]" />
+      <PhoneMockupSvg
+        style={{ fontFamily: publicSans }}
+        className="absolute top-[3.4rem] right-[2.5rem] z-[-1]"
       />
+
+      <div className="pt-[15.2rem] w-[54.6rem]">
+        <h1 className="text-[7.2rem] text-[var(--secondary-blue-1)] tracking-[-0.554px] leading-[7.2rem]">
+          Start building with out APIs for absolutely free.
+        </h1>
+        <div
+          className={`text-[1.5rem] relative w-[44.5rem] h-[4.8rem] ${publicSans.className} font-bold mt-[3.5rem]`}
+        >
+          <input
+            placeholder="Enter email address"
+            className="w-[100%] h-[100%] rounded-[50rem] shadow-[input]"
+          />
+          <button className="flex items-center justify-center  text-[var(--primary-white)] bg-[var(--primary-pink)] rounded-[50rem] hover:bg-[var(--secondary-pink)] absolute top-0 right-0 w-[17.3rem] h-[100%] leading-[1.5rem]">
+            Schedule a Demo
+          </button>
+        </div>
+        <p>
+          Have any questions? <span>Contact Us</span>
+        </p>
+      </div>
     </div>
   );
 }
