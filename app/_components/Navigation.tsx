@@ -14,7 +14,7 @@ export default function Navigation() {
   return (
     <nav className="mx-[16.5rem] mt-[4rem] text-[1.5rem]">
       <ul
-        className={`${publicSans.className} font-bold flex items-center text-[var(--secondary-blue-1)]`}
+        className={`${publicSans.className} font-bold flex items-center text-[var(--secondary-blue-1-opac)]`}
       >
         <li className="mr-[6.4rem]">
           <Link href="/">

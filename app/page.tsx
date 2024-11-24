@@ -28,14 +28,16 @@ export default function Home() {
         >
           <input
             placeholder="Enter email address"
-            className="w-[100%] h-[100%] rounded-[50rem] shadow-[input]"
+            className="w-[100%] h-[100%] rounded-[50rem] shadow-input focus-visible:outline-none hover:shadow-none pl-[2.7rem] text-[1.5rem]"
           />
-          <button className="flex items-center justify-center  text-[var(--primary-white)] bg-[var(--primary-pink)] rounded-[50rem] hover:bg-[var(--secondary-pink)] absolute top-0 right-0 w-[17.3rem] h-[100%] leading-[1.5rem]">
+          <button className="flex items-center justify-center  text-[var(--primary-white)] bg-[var(--primary-pink)] rounded-[50rem] hover:bg-[var(--secondary-pink)] absolute top-0 right-0 w-[17.3rem] h-[100%] leading-[1.5rem] ">
             Schedule a Demo
           </button>
         </div>
-        <p>
-          Have any questions? <span>Contact Us</span>
+        <p
+          className={`mt-[1.6rem] ml-[2.7rem] ${publicSans.className} text-[1.5rem] text-[var(--secondary-blue-1-opac)]`}
+        >
+          Have any questions? <span className="font-[700]">Contact Us</span>
         </p>
       </div>
     </div>
