@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${serifDisplay.className} antialiased flex flex-col min-h-screen overflow-hidden`}
+        className={`${serifDisplay.className} antialiased flex flex-col min-h-screen overflow-x-hidden`}
       >
         <Navigation />
 
