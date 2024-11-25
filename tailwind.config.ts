@@ -14,6 +14,7 @@ export default {
       },
       boxShadow: {
         input: "10px 10px 25px -10px rgba(54, 83, 107, 0.25)",
+        script: "25px 25px 80px 0px rgba(54, 83, 107, 0.30)",
       },
     },
   },
