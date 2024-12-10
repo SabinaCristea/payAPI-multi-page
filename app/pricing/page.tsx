@@ -14,25 +14,36 @@ export default function Page() {
     <main>
       <CirclePatternSvg className="absolute top-[-55rem] right-[-15.5rem] z-[-1]" />
 
-      <h1>Pricing</h1>
-      <div className="flex">
+      <h1 className="text-[5.6rem] text-[var(--secondary-blue-1)] mb-[7.2rem] mt-[8.2rem] leading-[5.6rem]">
+        Pricing
+      </h1>
+      <div className="flex justify-between">
         <PricingPlan
           isInvChecked={false}
           isAsChecked={false}
           isLiChecked={false}
           isIncChecked={false}
+          title="Free plan"
+          subtitle="Build and test using our core set of products with up to 100 API requests"
+          price="0.00"
         />
         <PricingPlan
           isInvChecked={true}
           isAsChecked={true}
           isLiChecked={false}
           isIncChecked={false}
+          title="Basic plan"
+          subtitle="Launch your project with unlimited requests and no contractual minimums"
+          price="249.00"
         />
         <PricingPlan
           isInvChecked={true}
           isAsChecked={true}
           isLiChecked={true}
           isIncChecked={true}
+          title="Premium plan"
+          subtitle="Get tailored solutions, volume pricing, and dedicated support for your team "
+          price="499.00"
         />
       </div>
       <div className="flex items-center justify-between w-[100%] mb-[9.6rem] mt-[10rem]">
