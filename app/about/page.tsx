@@ -3,6 +3,7 @@ import CirclePatternSvg from "./../../public/assets/shared/desktop/bg-pattern-ci
 
 import GridAbout from "../_components/GridAbout";
 import { Public_Sans } from "next/font/google";
+import Image from "next/image";
 
 const publicSans = Public_Sans({
   subsets: ["latin"],
@@ -26,8 +27,72 @@ const page = () => {
         text2="At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers. "
       />
 
-      {/* IMAGE */}
-      {/* NUMBERS GRID */}
+      <div className="relative w-[100vw] h-[50rem] ml-[-16.5rem] mt-[5rem] mb-[5rem]">
+        <CirclePatternSvg className="absolute top-[-30%] left-[-53rem] z-[-1]" />
+        <Image
+          src="/assets/about/desktop/image-team-members.jpg"
+          fill
+          alt="team image"
+          className="object-cover"
+        />
+      </div>
+
+      <div className="flex justify-between gap-[3rem] mb-[7.2rem]">
+        <div>
+          <div
+            className="w-[35rem] h-[0.1rem] bg-[var(--secondary-blue-1)] opacity-[0.25] mb-[2.4rem]
+      "
+          ></div>
+          <p
+            className={`${publicSans.className} text-[1.6rem] text-[var(--secondary-blue-3)]`}
+          >
+            Team Members
+          </p>
+          <h1 className="text-[5.6rem] leading-[7.2rem] text-[var(--primary-pink)]">
+            300+
+          </h1>
+          <div
+            className="max-w-[35rem] h-[0.1rem] bg-[var(--secondary-blue-1)] opacity-[0.25] mt-[1.7rem]
+      "
+          ></div>
+        </div>
+        <div>
+          <div
+            className="w-[35rem] h-[0.1rem] bg-[var(--secondary-blue-1)] opacity-[0.25] mb-[2.4rem]
+      "
+          ></div>
+          <p
+            className={`${publicSans.className} text-[1.6rem] text-[var(--secondary-blue-3)]`}
+          >
+            Offices in the US
+          </p>
+          <h1 className="text-[5.6rem] leading-[7.2rem] text-[var(--primary-pink)]">
+            3
+          </h1>
+          <div
+            className="max-w-[35rem] h-[0.1rem] bg-[var(--secondary-blue-1)] opacity-[0.25] mt-[1.7rem]
+      "
+          ></div>
+        </div>
+        <div>
+          <div
+            className="w-[35rem] h-[0.1rem] bg-[var(--secondary-blue-1)] opacity-[0.25] mb-[2.4rem]
+      "
+          ></div>
+          <p
+            className={`${publicSans.className} text-[1.6rem] text-[var(--secondary-blue-3)]`}
+          >
+            Transactions analyzed
+          </p>
+          <h1 className="text-[5.6rem] leading-[7.2rem] text-[var(--primary-pink)]">
+            10M+
+          </h1>
+          <div
+            className="max-w-[35rem] h-[0.1rem] bg-[var(--secondary-blue-1)] opacity-[0.25] mt-[1.7rem]
+      "
+          ></div>
+        </div>
+      </div>
 
       <GridAbout
         name1="The Culture"
@@ -36,7 +101,7 @@ const page = () => {
         text2="We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills."
       />
 
-      <div className="flex items-center justify-between w-[100%] mb-[9.6rem] mt-[10rem]">
+      <div className="flex items-center justify-between w-[100%] mb-[9.6rem] mt-[8rem]">
         <h2 className="text-[4.8rem] text-[var(--secondary-blue-1)]">
           Ready to start?
         </h2>
