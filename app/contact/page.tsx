@@ -8,6 +8,8 @@ import GoogleSvg from "/public/assets/shared/desktop/google.svg";
 import NvidiaSvg from "/public/assets/shared/desktop/nvidia.svg";
 import Form from "next/form";
 
+import CirclePatternSvg from "/public/assets/shared/desktop/bg-pattern-circle.svg";
+
 // import { Checkbox } from "@nextui-org/checkbox";
 
 const publicSans = Public_Sans({
@@ -19,12 +21,13 @@ const publicSans = Public_Sans({
 const page = () => {
   return (
     <div>
+      <CirclePatternSvg className="absolute top-[-55rem] right-[-15.5rem] z-[-1]" />
       <h1 className="max-w-[73rem] text-[5.6rem] text-[var(--secondary-blue-1)] mb-[4.3rem] mt-[8.2rem] leading-[5.6rem] tracking-[-0.431px]">
         Submit a help request and we&rsquo;ll get in touch shortly.
       </h1>
 
-      <div className="flex">
-        <Form action="/">
+      <div className="flex justify-between">
+        <Form action="/" className="flex flex-col w-[44.5rem]">
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Email Address" />
           <input type="text" placeholder="Company Name" />
@@ -35,26 +38,28 @@ const page = () => {
           <button type="submit">Submit</button>
         </Form>
 
-        <div>
-          <h2>Join the thousands of innovators already building with us</h2>
-          <div className="grid grid-cols-3 grid-rows-2 items-center justify-center gap-y-[5.5rem] gap-x-[6rem]">
+        <div className="w-[54.1rem]">
+          <h2 className="text-[2.4rem] leading-[3.2rem] tracking-[-0.185px] text-[var(--secondary-blue-1-opac)] mb-[4rem] w-[44.5rem]">
+            Join the thousands of innovators already building with us
+          </h2>
+          <div className="grid grid-cols-3 grid-rows-2 items-center justify-center gap-y-[5.5rem] gap-x-[5rem]">
             <div className="flex items-center justify-center self-end">
-              <TeslaSvg fill="#fff" />
+              <TeslaSvg style={{ fill: "#36536b" }} />
             </div>
             <div className="flex items-center justify-center self-end">
-              <MicrosoftSvg fill="#fff" />
+              <MicrosoftSvg style={{ fill: "#36536b" }} />
             </div>
             <div className="flex items-center justify-center self-end">
-              <HewlettSvg />
+              <HewlettSvg style={{ fill: "#36536b" }} />
             </div>
             <div className="flex items-center justify-center self-start">
-              <OracleSvg />
+              <OracleSvg style={{ fill: "#36536b" }} />
             </div>
             <div className="flex items-center justify-center self-start">
-              <GoogleSvg />
+              <GoogleSvg style={{ fill: "#36536b" }} />
             </div>
             <div className="flex items-center justify-center self-start">
-              <NvidiaSvg />
+              <NvidiaSvg style={{ fill: "#36536b" }} />
             </div>
           </div>
         </div>
