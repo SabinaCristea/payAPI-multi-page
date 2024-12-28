@@ -11,7 +11,8 @@
   --primary-white-opac: rgba(251, 252, 254, 0.7);
 
   --secondary-blue-1: #36536b;
-  --secondary-blue-1-opac: #37546db3;
+  --secondary-blue-1-opac: rgba(55, 84, 109, 0.702);
+  --secondary-blue-1-opac2: rgba(55, 84, 109, 0.5);
   --secondary-blue-2: #1b262f;
   --secondary-blue-3: #6c8294;
   --secondary-pink: #da6d97;
