@@ -3,11 +3,6 @@ import "./_styles/globals.css";
 import Navigation from "./_components/Navigation";
 import Footer from "./_components/Footer";
 
-// const serifDisplay = localFont({
-//   src: "./fonts/DMSerifDisplay-Regular.ttf",
-//   variable: "--font-serif-display",
-//   weight: "400",
-// });
 
 const serifDisplay = DM_Serif_Display({
   subsets: ["latin"],
