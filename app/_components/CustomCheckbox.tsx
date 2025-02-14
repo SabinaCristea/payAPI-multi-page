@@ -7,7 +7,7 @@ const CustomCheckbox = () => {
 
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(event.target.checked);
-    console.log("checked");
+    // console.log("checked");
   };
 
   return (
